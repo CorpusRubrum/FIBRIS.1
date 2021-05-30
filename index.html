@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIBRIS</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+        <a-entity environment="preset: none; active: true; seed: 26; skyType: gradient; skyColor: #1b7660; horizonColor: #e4b676; lightPosition: 0 1.65 -1; fog: 0.75; groundYScale: 5; groundTexture: walkernoise; groundColor: #664735; groundColor2: #6c4b39; dressingColor: #7c5c45; dressingVariance: 20 20 20; gridColor: #e4b676; ground: none" preset-switcher="" id="environment" visible=""><a-entity class="environment" position="0 50 0" light="intensity: 0.6; color: #8dbaaf; groundColor: #664735; type: hemisphere"></a-entity><a-entity class="environment" position="0 1.65 -1" light="shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; intensity: 0.6"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 5" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" scale="NaN 5 5"></a-entity><a-sky radius="200" theta-length="110" class="environment" geometry="" position="-29.555 0 0" material="shader: gradientshader; npot: false; topColor: #1b7660; bottomColor: #e4b676"></a-sky><a-entity id="stars" visible="false"></a-entity><a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #8dbaaf; intensity: 0.6; groundColor: #664735" visible=""></a-entity><a-entity class="environment" position="0 1.65 -1" light="intensity: 0.6; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 5" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible="false"></a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #1b7660; bottomColor: #e4b676" visible="" geometry=""></a-sky><a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #8dbaaf; intensity: 0.6; groundColor: #664735" visible=""></a-entity><a-entity class="environment" position="0 1.65 -1" light="intensity: 0.6; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="false" scale="1 1 5" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible="false"></a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #1b7660; bottomColor: #e4b676" visible="" geometry=""></a-sky></a-entity>
+
+        <a-plane position="0.73244 -18.98522 -4" rotation="-90 0 0" width="4" height="4" src="./fibras.jpeg" material="" geometry="" scale="50 50 50"></a-plane>
+        <a-plane position="-2.83781 29.65035 4" rotation="90 0 0" width="4" height="4" src="./fibras.jpeg" material="" geometry="" scale="50 50 50"></a-plane>
+        <a-assets>
+            <video id="espacio1" autoplay loop="true" src="./espacios4.mp4"></video>
+            <video id="espacio2" autoplay loop="true" src="./espacioss.mp4"></video>
+            <video id="espacio3" autoplay loop="true" src="./espacioss1.mp4"></video>
+
+          </a-assets>
+          <a-video src="./espacios4.mp4" material="color: #dbc9b3" geometry="" scale="40 40 40" position="0 0 -20.163"></a-video>
+          <a-video src="./espacioss.mp4" material="" geometry="" scale="40 40 40" position=" -39.908 0 0"></a-video>
+          <a-video src="./espacioss1.mp4" material="" geometry="" scale="40 40 40" position=" 39.395 0 0"></a-video>
+    </a-scene>
+        
+    
+
+
+
+
+</body>
+</html>
