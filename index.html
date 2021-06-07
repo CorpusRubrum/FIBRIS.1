@@ -14,20 +14,29 @@
         <a-plane position="0.73244 -18.98522 -4" rotation="-90 0 0" width="4" height="4" src="./fibras.jpeg" material="" geometry="" scale="50 50 50"></a-plane>
         <a-plane position="-2.83781 29.65035 4" rotation="90 0 0" width="4" height="4" src="./fibras.jpeg" material="" geometry="" scale="50 50 50"></a-plane>
         <a-plane position="7.4498 20.04814 -3.22057" rotation="14.457444044536063 -45.02302354138009 107.96530212547667" width="4" height="4" src="./suelo.jpg" material="" geometry="primitive: torusKnot" scale="40 40 40"></a-plane>
-        <a-assets timeout="60000" >
+      
+      
+        <a-assets timeout="6000" >
             <video id="espacio1" autoplay loop="true" src="./espacios4.mp4"></video>
             <video id="espacio2" autoplay loop="true" src="./espacioss.mp4"></video>
             <video id="espacio3" autoplay loop="true" src="./espacioss1.mp4"></video>
 
-          </a-assets>
+        </a-assets>
+
+        <a-entity  geometry="primitive:plane;" position="0 0 -20.163" scale="40 40 40" material="shader:gif;src:url(./assets/1.gif); ; transparent: true;alphaTest:0.5; side:double" ></a-entity>
+        <a-entity  geometry="primitive:plane;" position=" -39.908 0 0" scale="40 40 40" material="shader:gif;src:url(./assets/2.gif); ; transparent: true;alphaTest:0.5; side:double" ></a-entity>
+        <a-entity  geometry="primitive:plane;" position=" 39.395 0 0"  scale="40 40 40" material="shader:gif;src:url(./assets/3.gif); ; transparent: true;alphaTest:0.5; side:double" ></a-entity>
+
+
+        <!--
           <a-video src="./espacios4.mp4" material="color: #dbc9b3" geometry="" scale="40 40 40" position="0 0 -20.163"></a-video>
           <a-video src="./espacioss.mp4" material="" geometry="" scale="40 40 40" position=" -39.908 0 0"></a-video>
-          <a-video src="./espacioss1.mp4" material="" geometry="" scale="40 40 40" position=" 39.395 0 0"></a-video>
+          <a-video src="./espacioss1.mp4" material="" geometry="" scale="40 40 40" position=" 39.395 0 0"></a-video>  !--> 
 
           <a-sound src="src: url(sonidoblanco.mp3)" autoplay="true" position="26 1.6 49" volume="1"loop="true"></a-sound>
 
           <a-entity camera="" position="26.34947 1.6 48.15816" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
-    </a-scene>
+        </a-scene>
         
     
 
